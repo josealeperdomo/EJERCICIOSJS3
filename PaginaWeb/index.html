@@ -10,11 +10,12 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
+
     <nav class="bg-slate-900 h-24 w-full p-4 flex fixed items-center text-[#FF3131] justify-between z-40" id="nav">
         <div class="flex gap-6">
-        <a href="#" class="w-36"><img class="w-40" src="images/Communglish__1_-removebg-preview.png" alt=""></a>
-        <button id="modooscuro" class=" h-14 flex" onclick="modo()"><img class="h-14"  src="https://cdn-icons-png.flaticon.com/512/37/37474.png" alt=""></button>
-        <button id="modoclaro" class="h-14 hidden" onclick="modo()"><img class="h-14"  src="https://cdn.icon-icons.com/icons2/1416/PNG/512/arrows-button-off_98344.png" alt=""></button>
+            <a href="#" class="w-36"><img class="w-40" src="images/Communglish__1_-removebg-preview.png" alt=""></a>
+            <button id="modooscuro" class=" h-14 flex" onclick="modo()"><img class="h-14"  src="https://cdn-icons-png.flaticon.com/512/37/37474.png" alt=""></button>
+            <button id="modoclaro" class="h-14 hidden" onclick="modo()"><img class="h-14"  src="https://cdn.icon-icons.com/icons2/1416/PNG/512/arrows-button-off_98344.png" alt=""></button>
         </div>
         <ul class="hidden justify-center  gap-3 md:flex">
             <li><a href="#quienes" class="hover:underline hover:cursor-pointer">Quienes somos</a></li>
@@ -25,8 +26,9 @@
         </ul>
         <img class="w-12 hover:cursor-pointer md:hidden" onclick="menu()" src="images/Diseño_sin_título__2_-removebg-preview (1).png" id="tresmenulat" alt="">
     </nav>
+
     <div id="ventana" class="flex justify-center items-center">
-        <div class="flex flex-col fixed h-96 w-[90%] max-w-[700px] top-28 z-50 justify-center items-center bg-slate-900 text-white p-10">
+        <div class="flex flex-col fixed h-[106] w-[90%] max-w-[700px] top-28 z-50 justify-center items-center bg-slate-900 text-white p-10">
             <button onclick="cerrar()" class="absolute top-0 right-0"><img class="h-14" src="https://media.muckrack.com/groups/icons/xreddeer.png" alt=""></button>
             <h1 class="text-2xl text-[#ff3131] sm:text-3xl md:text-4xl">ENTERATE DE NUESTRAS PROMOCIONES</h1>
             <ul class="text-xl sm:text-2xl md:text-3xl">
@@ -38,8 +40,11 @@
             </ul>
         </div>
     </div>
+    
     <div id="pantalla2" class='flex bg-[rgba(8,8,8,0.8)] fixed h-full left-0 top-0 bottom-0 right-0 z-40'></div>
+    
     <div id="pantalla" class='hidden bg-[rgba(8,8,8,0.5)] fixed h-full left-0 top-0 bottom-0 right-0 z-10 md:hidden'></div>
+    
     <aside id="aside" class="hidden flex-col h-full fixed bg-slate-900 right-0 items-center text-[#FF3131] gap-14 p-8 pt-0 text-l top-24 text-2xl z-50 md:hidden">
         <h1 class="text-4xl">Menu</h1>
         <ul class="flex flex-col gap-14">
@@ -50,19 +55,20 @@
             <li><a href="#contacto" class="hover:underline hover:cursor-pointer">Contacto</a></li>
         </ul>
     </aside>
+
     <main id="main" class="h-full flex flex-col bg-slate-950 relative">
         <section id="quienes" class="flex flex-col pt-28 gap-6 p-5 px-9 items-center text-white">
             <h1 class="text-6xl text-[#FF3131]">¿Quienes somos?</h1>
             <p class="text-4xl">¡Bienvenido a Communglish! Somos un instituto de inglés que te ofrece cursos personalizados para diferentes edades, profesores nativos y una metodología innovadora. En Communglish, no solo aprenderás el idioma, sino también la cultura, el humor y las expresiones de los países angloparlantes. ¡Únete a nuestra comunidad y empieza a hablar inglés como nunca antes!
             </p>
         </section>
+
         <section id="cursos" class="h-[full] flex flex-col pt-8 gap-8 p-5 px-9 items-center justify-center text-white"> 
             <h1 class="text-6xl text-[#FF3131]">Cursos</h1>
             <div id="carrusel" class="w-full h-full flex justify-center items-center textcarousel relative">
                 <img id="atras" class="w-[10%] h-[10%] bg-[rgba(212,212,212,0.5)] rounded-full hover:cursor-pointer relative right-3 max-w-[80px]" src="https://static.thenounproject.com/png/627785-200.png" alt="">
                 <div class="z-0 w-[100%] h-[100%] flex justify-center">
-                <img id="imagen" class="w-[100%] h-[100%] z-0" src="https://earlyedgecalifornia.org/wp-content/uploads/2018/09/Banner-Kids-reading-on-floor.png" alt="">
-                    
+                    <img id="imagen" class="w-[100%] h-[100%] z-0" src="https://earlyedgecalifornia.org/wp-content/uploads/2018/09/Banner-Kids-reading-on-floor.png" alt="">
                     <div id="text1" class="flex flex-col h-full justify-between px-3 pl-6 sm:p-7 items-center z-40 text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl absolute">
                         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Kindergarten</h1>
                         <p class="">Especial para ninos entre 3 y 6 años</p>
@@ -96,14 +102,13 @@
                             <p>deseen formar a sus</p>
                             <p>empleados</p>
                         </div>
-                        <a href="#contacto"><button class="bg-[#004AAD] p-2 sm:p-4 rounded-md ring-[#FF3131] hover:ring-2 textcarousel">¡CONTACTANOS!</button></a>
-                        
+                        <a href="#contacto"><button class="bg-[#004AAD] p-2 sm:p-4 rounded-md ring-[#FF3131] hover:ring-2 textcarousel">¡CONTACTANOS!</button></a>    
                     </div>
-                
                 </div>
                 <img id="delante" class="w-[10%] h-[10%] bg-[rgba(212,212,212,0.5)] rounded-full hover:cursor-pointer relative left-3 max-w-[80px]" src="https://static.thenounproject.com/png/627786-200.png" alt="">
             </div>
         </section>
+
         <section id="sedes" class="h-full flex flex-col pt-8 gap-6 p-5 px-9 items-center justify-center text-white text">
             <h1 class="text-6xl text-[#FF3131]">Sedes</h1>
             <div class="flex gap-4 flex-col xl:flex-row">
@@ -153,6 +158,7 @@
             
             </div>
         </section>
+
         <section id="contacto" class="h-full flex flex-col pt-6 gap-10 p-5 items-center text-black text">
             <h1 class="text-6xl text-[#FF3131]">Contacto</h1>
             <article id="formulario" class="flex bg-slate-800 p-9 justify-center items-center gap-8 rounded-md" data-aos="zoom-in" data-aos-duration="1200"> 
@@ -168,6 +174,7 @@
             </article>
         </section>
     </main>
+
     <footer id="piso" class="bg-slate-900 h-full w-full p-2 gap-5 flex flex-col items-center text-[#FF3131] justify-center z-40">
         <article class="flex flex-col justify-center items-center gap-3">
             <h1 class="text-2xl">Nuestras redes</h1>
@@ -177,7 +184,9 @@
                 <a href="https://www.x.com" target="_blank" class="w-10"><img class="w-10" src="https://seeklogo.com/images/T/twitter-icon-square-logo-108D17D373-seeklogo.com.png" alt=""></a>
             </div>
         </article>
+
         <h1>2023 © Communglish Institute</h1>
+
     </footer>
 
     <script src="main.js"></script>
