@@ -76,7 +76,7 @@ let imagenes = {
     url1: 'https://earlyedgecalifornia.org/wp-content/uploads/2018/09/Banner-Kids-reading-on-floor.png',
     url2: 'https://dot.siu.edu/education/_common/images/elementary-education/banner-student-teaching.jpg',
     url3: 'https://elimindset.com/wp-content/uploads/2017/05/highschool-banner.jpg',
-    url4: 'http://127.0.0.1:5500/PaginaWeb/images/Go-Higher-banner%20(1).jpg',
+    url4: 'https://png.pngtree.com/background/20230608/original/pngtree-people-talking-in-small-groups-with-speech-balloons-stock-photo-picture-image_2904092.jpg',
     url5: 'https://www.shutterstock.com/image-photo/group-multi-racial-people-meeting-600nw-2076807883.jpg'
 }
 
