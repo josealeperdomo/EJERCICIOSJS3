@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communglish</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <nav class="bg-slate-900 h-24 w-full p-4 flex fixed items-center text-[#FF3131] justify-between z-40" id="nav">
+        <div class="flex gap-6">
+        <a href="#" class="w-36"><img class="w-40" src="images/Communglish__1_-removebg-preview.png" alt=""></a>
+        <button id="modooscuro" class=" h-14 flex" onclick="modo()"><img class="h-14"  src="https://cdn-icons-png.flaticon.com/512/37/37474.png" alt=""></button>
+        <button id="modoclaro" class="h-14 hidden" onclick="modo()"><img class="h-14"  src="https://cdn.icon-icons.com/icons2/1416/PNG/512/arrows-button-off_98344.png" alt=""></button>
+        </div>
+        <ul class="hidden justify-center  gap-3 md:flex">
+            <li><a href="#quienes" class="hover:underline hover:cursor-pointer">Quienes somos</a></li>
+            <li><a href="#cursos" class="hover:underline hover:cursor-pointer">Cursos</a></li>
+            <li><a href="#sedes" class="hover:underline hover:cursor-pointer">Sedes</a></li>
+            <li><a href="#experiencias" class="hover:underline hover:cursor-pointer">Experiencias</a></li>
+            <li><a href="#contacto" class="hover:underline hover:cursor-pointer">Contacto</a></li>
+        </ul>
+        <img class="w-12 hover:cursor-pointer md:hidden" onclick="menu()" src="images/Diseño_sin_título__2_-removebg-preview (1).png" id="tresmenulat" alt="">
+    </nav>
+    <div id="ventana" class="flex justify-center items-center">
+        <div class="flex flex-col fixed h-96 w-[90%] max-w-[700px] top-28 z-50 justify-center items-center bg-slate-900 text-white p-10">
+            <button onclick="cerrar()" class="absolute top-0 right-0"><img class="h-14" src="https://media.muckrack.com/groups/icons/xreddeer.png" alt=""></button>
+            <h1 class="text-2xl text-[#ff3131] sm:text-3xl md:text-4xl">ENTERATE DE NUESTRAS PROMOCIONES</h1>
+            <ul class="text-xl sm:text-2xl md:text-3xl">
+                <li>Kindergarten: 20% de descuento</li>
+                <li>Elementary: 40% de descuento</li>
+                <li>High school: 2 alumnos por el precio de uno</li>
+                <li>Adults/University: 30% de descuento y 40% de descuento si paga dos meses de anticipacion</li>
+                <li>Bussiness: 3 empleados por el precio de uno</li>
+            </ul>
+        </div>
+    </div>
+    <div id="pantalla2" class='flex bg-[rgba(8,8,8,0.8)] fixed h-full left-0 top-0 bottom-0 right-0 z-40'></div>
+    <div id="pantalla" class='hidden bg-[rgba(8,8,8,0.5)] fixed h-full left-0 top-0 bottom-0 right-0 z-10 md:hidden'></div>
+    <aside id="aside" class="hidden flex-col h-full fixed bg-slate-900 right-0 items-center text-[#FF3131] gap-14 p-8 pt-0 text-l top-24 text-2xl z-50 md:hidden">
+        <h1 class="text-4xl">Menu</h1>
+        <ul class="flex flex-col gap-14">
+            <li><a href="#quienes" class="hover:underline hover:cursor-pointer">Quienes somos</a></li>
+            <li><a href="#cursos" class="hover:underline hover:cursor-pointer">Cursos</a></li>
+            <li><a href="#sedes" class="hover:underline hover:cursor-pointer">Sedes</a></li>
+            <li><a href="#experiencias" class="hover:underline hover:cursor-pointer">Experiencias</a></li>
+            <li><a href="#contacto" class="hover:underline hover:cursor-pointer">Contacto</a></li>
+        </ul>
+    </aside>
+    <main id="main" class="h-full flex flex-col bg-slate-950 relative">
+        <section id="quienes" class="flex flex-col pt-28 gap-6 p-5 px-9 items-center text-white">
+            <h1 class="text-6xl text-[#FF3131]">¿Quienes somos?</h1>
+            <p class="text-4xl">¡Bienvenido a Communglish! Somos un instituto de inglés que te ofrece cursos personalizados para diferentes edades, profesores nativos y una metodología innovadora. En Communglish, no solo aprenderás el idioma, sino también la cultura, el humor y las expresiones de los países angloparlantes. ¡Únete a nuestra comunidad y empieza a hablar inglés como nunca antes!
+            </p>
+        </section>
+        <section id="cursos" class="h-[full] flex flex-col pt-8 gap-8 p-5 px-9 items-center justify-center text-white"> 
+            <h1 class="text-6xl text-[#FF3131]">Cursos</h1>
+            <div id="carrusel" class="w-full h-full flex justify-center items-center textcarousel relative">
+                <img id="atras" class="w-[10%] h-[10%] bg-[rgba(212,212,212,0.5)] rounded-full hover:cursor-pointer relative right-3 max-w-[80px]" src="https://static.thenounproject.com/png/627785-200.png" alt="">
+                <div class="z-0 w-[100%] h-[100%] flex justify-center">
+                <img id="imagen" class="w-[100%] h-[100%] z-0" src="https://earlyedgecalifornia.org/wp-content/uploads/2018/09/Banner-Kids-reading-on-floor.png" alt="">
+                    
+                    <div id="text1" class="flex flex-col h-full justify-between p-7 items-center z-40 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl absolute">
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Kindergarten</h1>
+                        <p class="">Especial para ninos entre 3 y 6 años</p>
+                        <a href="#contacto"><button class="bg-[#004AAD] p-2 sm:p-4 rounded-md ring-[#FF3131] hover:ring-2 textcarousel">¡CONTACTANOS!</button></a>
+                    </div>
+                    <div id="text2" class="hidden flex-col h-full justify-between p-7 items-center z-40 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl absolute">
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Elementary</h1>
+                        <p class="">Especial para niños entre 7 y 12 años</p>
+                        <a href="#contacto"><button class="bg-[#004AAD] p-2 sm:p-4 rounded-md ring-[#FF3131] hover:ring-2 textcarousel">¡CONTACTANOS!</button></a>
+                    </div>
+                    <div id="text3" class="hidden flex-col h-full justify-between p-1 md:p-7 items-center z-40 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl absolute">
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">High school</h1>
+                        <div class="flex flex-col items-center">
+                            <p class="">Especial para adolescentes entre</p>
+                            <p>13 y 17 años</p>
+                        </div>
+                        <a href="#contacto"><button class="bg-[#004AAD] p-2 sm:p-4 rounded-md ring-[#FF3131] hover:ring-2 textcarousel">¡CONTACTANOS!</button></a>
+                    </div>
+                    <div id="text4" class="hidden flex-col h-full justify-between p-7 items-center z-40 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl absolute">
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">University/Adult</h1>
+                        <div class="flex flex-col items-center">
+                            <p class="">Especial para jóvenes y adultos</p>
+                            <p>a partir de los 18 años</p>
+                        </div>
+                        <a href="#contacto"><button class="bg-[#004AAD] p-2 sm:p-4 rounded-md ring-[#FF3131] hover:ring-2 textcarousel">¡CONTACTANOS!</button></a>
+                    </div>
+                    <div id="text5" class="hidden flex-col h-full justify-between p-2 sm:p-4 md:p-7 items-center z-40 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl absolute">
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Business</h1>
+                        <div class="flex flex-col items-center">
+                            <p class="">Especial para empresas que</p>
+                            <p>deseen formar a sus</p>
+                            <p>empleados</p>
+                        </div>
+                        <a href="#contacto"><button class="bg-[#004AAD] p-2 sm:p-4 rounded-md ring-[#FF3131] hover:ring-2 textcarousel">¡CONTACTANOS!</button></a>
+                        
+                    </div>
+                
+                </div>
+                <img id="delante" class="w-[10%] h-[10%] bg-[rgba(212,212,212,0.5)] rounded-full hover:cursor-pointer relative left-3 max-w-[80px]" src="https://static.thenounproject.com/png/627786-200.png" alt="">
+            </div>
+        </section>
+        <section id="sedes" class="h-full flex flex-col pt-8 gap-6 p-5 px-9 items-center justify-center text-white text">
+            <h1 class="text-6xl text-[#FF3131]">Sedes</h1>
+            <div class="flex gap-4 flex-col xl:flex-row">
+                <div class="flex flex-col items-center text-4xl gap-2" data-aos="zoom-in" data-aos-duration="1200">
+                    <p>Sede Chacao</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.0774833370615!2d-66.86013229737613!3d10.494558159021771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a59dbcc65c7fd%3A0xb7890911a45c073c!2sAlto%20Campo!5e0!3m2!1ses!2sus!4v1700456103814!5m2!1ses!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="flex flex-col items-center text-4xl gap-2" data-aos="zoom-in" data-aos-duration="1200">
+                    <p>Sede UCV</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4665.4386846929665!2d-66.89595198202618!3d10.488786738946303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a58d0ab732f93%3A0x550463a4c99c9340!2sUniversidad%20Central%20de%20Venezuela!5e0!3m2!1ses!2sus!4v1700456134961!5m2!1ses!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="flex flex-col items-center text-4xl gap-2" data-aos="zoom-in" data-aos-duration="1200">
+                    <p>Sede Las Mercedes</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3205.126608274702!2d-66.86250822755008!3d10.481219817730274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a58f7274dce3b%3A0xbcc03cc5a471e3d2!2zVG9sw7Nu!5e0!3m2!1ses!2sus!4v1700456419835!5m2!1ses!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencias" class="h-full flex flex-col pt-8 gap-10 p-5 px-6 sm:px-9 items-center justify-center text-white text">
+            <h1 class="text-6xl text-[#FF3131]">Experiencias</h1>
+            <p class="text-4xl">Estas han sido las experiencias de algunos de nuestros clientes!</p>
+            <div id="cajas" class="grid grid-cols-1 lg:grid-cols-2 gap-10 2xl:grid-cols-3 2xl:gap-6">
+                
+                <div class="bg-slate-800 flex gap-5 items-center p-7 w-[450px] rounded-md" data-aos="zoom-in" data-aos-duration="1200">
+                    <img class="w-32 h-32" src="https://lamujermovil.files.wordpress.com/2015/09/foto.jpg" alt="">
+                    <div>
+                        <h2 class="text-xl text-white">Maria Ruiz</h2>
+                        <p class="text-white">“Communglish me ayudó a mejorar mi nivel de inglés de una manera divertida y eficaz. Los profesores son muy amables y profesionales, y los cursos se adaptan a las necesidades de cada alumno. Ahora puedo comunicarme con fluidez y confianza en inglés. Gracias, Communglish.”</p>
+                    </div>
+
+                </div>
+                <div class="bg-slate-800 flex gap-5 items-center p-7 w-[450px] rounded-md" data-aos="zoom-in" data-aos-duration="1200">
+                    <img class="w-32 h-32" src="https://meragor.com/files/styles//220_220_bottom_wm/avatar-211978-002154.png" alt="">
+                    <div>
+                        <h2 class="text-xl text-white">Carlos Rodríguez</h2>
+                        <p class="text-white">“Estoy muy satisfecho con el servicio y la calidad de Communglish. Aprendí inglés desde cero con ellos, y ahora puedo leer, escribir y hablar con soltura. Los materiales son muy completos y actualizados, y los horarios son flexibles. Recomiendo Communglish a todos los que quieran aprender inglés.” </p>
+                    </div>
+                </div>
+        
+                <div class="bg-slate-800 flex gap-5 items-center p-7 w-[450px] rounded-md lg:relative lg:left-[250px] 2xl:static" data-aos="zoom-in" data-aos-duration="1200">
+                    <img class="w-32 h-32" src="https://play-lh.googleusercontent.com/a-/ALV-UjUWtb6J31tVRaMmZXjJdAruYQ7ZASLvz3WcJHGdIiVWGuEX" alt="">
+                    <div>
+                        <h2 class="text-xl text-white">Laura García</h2>
+                        <p class="text-white">“Communglish es el mejor instituto de inglés que he conocido. Los cursos son dinámicos, interactivos y personalizados. Los profesores son nativos, cualificados y simpáticos. Además, ofrecen actividades culturales y sociales para practicar el idioma y conocer gente nueva. Communglish es más que un instituto, es una comunidad.”</p>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        <section id="contacto" class="h-full flex flex-col pt-6 gap-10 p-5 items-center text-black text">
+            <h1 class="text-6xl text-[#FF3131]">Contacto</h1>
+            <article id="formulario" class="flex bg-slate-800 p-9 justify-center items-center gap-8 rounded-md" data-aos="zoom-in" data-aos-duration="1200"> 
+            <div class="flex flex-col gap-4">
+                <form id="form" class="flex flex-col gap-4 w-40 sm:w-64" action="">
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre y apellido" required>
+                    <input type="email" id="email" name="" id="" placeholder="Ingrese su email" required>
+                    <input type="text" id="numero" placeholder="Ingrese su numero de telefono" required>
+                </form>
+                <button id="enviar" class="bg-[#004AAD] w-full p-2 rounded-md ring-[#FF3131] hover:ring-2">Enviar</button>
+            </div>
+                <img class="h-24" src="images/Communglish__1_-removebg-preview.png" alt="">
+            </article>
+        </section>
+    </main>
+    <footer id="piso" class="bg-slate-900 h-full w-full p-2 gap-5 flex flex-col items-center text-[#FF3131] justify-center z-40">
+        <article class="flex flex-col justify-center items-center gap-3">
+            <h1 class="text-2xl">Nuestras redes</h1>
+            <div class="flex items-center justify-center gap-6">
+                <a href="https://www.instagram.com" target="_blank" class="w-10"><img class="w-10" src="https://cdn-icons-png.flaticon.com/128/5968/5968776.png" alt=""></a>
+                <a href="https://www.facebook.com" target="_blank" class="w-10"><img class="w-10" src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt=""></a>
+                <a href="https://www.x.com" target="_blank" class="w-10"><img class="w-10" src="https://seeklogo.com/images/T/twitter-icon-square-logo-108D17D373-seeklogo.com.png" alt=""></a>
+            </div>
+        </article>
+        <h1>2023 © Communglish Institute</h1>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
